@@ -27,16 +27,16 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-f517043a303f961b4db8.js"
+    "url": "webpack-runtime-bfe98edfb972dd779d69.js"
   },
   {
-    "url": "styles.5db83db345a8746542bf.css"
+    "url": "styles.067537772d5f5eedcb93.css"
   },
   {
     "url": "styles-407fe62976dc5310c43e.js"
   },
   {
-    "url": "framework-55f7b2ba736e89fdc740.js"
+    "url": "framework-f0fa8831b6d960814d9c.js"
   },
   {
     "url": "532a2f07-e8f2004ed6697a7c6ea1.js"
@@ -45,11 +45,11 @@ self.__precacheManifest = [
     "url": "dc6a8720040df98778fe970bf6c000a41750d3ae-d743a9af41120ad88de2.js"
   },
   {
-    "url": "app-837a1541f20c854c8bba.js"
+    "url": "app-a454dfbcac4debbd3b9b.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "2c08ad5f3a1e8c4e30f32dff7f7257cf"
+    "revision": "739a379461e0c965c01108f20c0cca11"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-fd4fb51a6fac1c18bdde.js"
@@ -60,7 +60,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "2c1b04d480c531db021772fa2f2295e8"
+    "revision": "4240328f8bb32454f4438cdbbd35760d"
   },
   {
     "url": "polyfill-16a5f8861b5c4d3834d4.js"
@@ -71,7 +71,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "d14e5a73b5bfb29723593464df183c66"
+    "revision": "6a50c6ed19945ab71e08707070d59b88"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -163,7 +163,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-837a1541f20c854c8bba.js`))) {
+  if (!resources || !(await caches.match(`/app-a454dfbcac4debbd3b9b.js`))) {
     return await fetch(event.request)
   }
 
